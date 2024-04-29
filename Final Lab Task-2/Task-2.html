@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 2</title>
+</head>
+<body>
+    <form method="" action="" enctype="">
+        Email  <br> <input type="email" name="email" value="" id="email"/> <br>
+        <input type="button" name="submit" value="Submit" onclick="validateEmail()"/>
+    </form>
+    <script>
+    let validateEmail = () => {
+        let email = document.getElementById('email').value;
+        let test = "Successful";
+
+        if (email === "") {
+            test = "Email cannot be empty";
+        } else if (!isValidEmail(email)) {
+            test = "Invalid email format";
+        } else {
+            alert("Success");
+        }
+
+        alert(test);
+    }
+
+    
+    let isValidEmail = (email) => {
+        for (let i = 0; i < email.length; i++) {
+            if (email[i]=='@') {
+                return true;
+            }
+        }
+        return false;
+    }
+</script>
+
+</body>
+</html>

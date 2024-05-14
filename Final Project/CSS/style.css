@@ -1,0 +1,35 @@
+#div1 {
+  background: #80ced6;
+}
+.div3 {
+  background: #fefbd8;
+}
+
+
+
+
+body {
+  background-color: #80ced6;
+  display: flex;
+  justify-content: center;
+  font-size: 130%;
+}
+
+.header {
+  height: 100px;
+}
+
+.sf,
+.hf {
+  font-size: 30px;
+}
+
+#t1 {
+  background-color: #fefbd8;
+}
+
+.had {
+  color: yellow;
+  border: 1px solid black;
+}
+
